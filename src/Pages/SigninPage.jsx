@@ -28,8 +28,6 @@ export default function SigninPage() {
           <p className="text-gray-500 text-[20px] mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
-
-          {/* Form */}
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
               <label

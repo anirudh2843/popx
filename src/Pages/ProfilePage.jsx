@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function ProfilePage() {
   const [profileImage, setProfileImage] = useState(
-    "https://randomuser.me/api/portraits/women/44.jpg"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZsINAeXhg_aONZrbZrMTZEjopaRJ1xmlVA&s"
   );
 
   const handleImageChange = (e) => {
@@ -15,20 +15,18 @@ export default function ProfilePage() {
 
   return (
     <div className="min-h-screen flex justify-center bg-gray-100 px-4 py-6">
-      <div className="bg-gray-50 w-full max-w-md rounded-2xl shadow-lg min-h-[80vh]  flex flex-col">
-        <h1 className="text-4xl p-6 font-semibold text-gray-800 mb-6">
+      <div className="bg-[#F7F8F9] w-full max-w-md rounded-2xl shadow-lg min-h-[80vh]  flex flex-col">
+        <h1 className="text-4xl p-6 font-semibold text-[#1D2226] mb-6">
           Account Settings
         </h1>
 
         <div className="bg-gray-100 p-8 flex flex-col position-relative h-full">
-          {/* Profile Picture */}
           <div className="relative flex">
             <img
               src={profileImage}
               alt="Profile"
               className="w-30 h-30 rounded-full object-cover"
             />
-            {/* Hidden File Input */}
             <input
               id="fileInput"
               type="file"
@@ -36,7 +34,6 @@ export default function ProfilePage() {
               onChange={handleImageChange}
               className="hidden"
             />
-            {/* Camera Icon (Label) */}
             <label
               htmlFor="fileInput"
               className="absolute bottom-0 left-20 bg-purple-600 p-1 rounded-full cursor-pointer"
@@ -62,7 +59,6 @@ export default function ProfilePage() {
               <p className="text-gray-600 text-[20px]">Marry@Gmail.Com</p>
             </div>
           </div>
-          {/* Description */}
           <p className="text-gray-800 mt-8 text-[20px]">
             Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
             Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam

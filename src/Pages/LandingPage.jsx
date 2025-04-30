@@ -8,12 +8,12 @@ export default function LandingPage() {
   const navigate = useNavigate();
   return (
     <div className="min-h-screen flex justify-center  px-4 py-6">
-      <div className="bg-gray-50 w-full max-w-md rounded-2xl shadow-lg flex flex-col justify-end min-h-[80vh] p-6">
+      <div className="bg-[#F7F8F9] w-full max-w-md rounded-2xl shadow-lg flex flex-col justify-end min-h-[80vh] p-6">
         <div className="mt-auto">
-          <h1 className="text-4xl font-bold text-gray-800 mb-6">
+          <h1 className="text-4xl font-bold text-gray-900 mb-3">
             Welcome to PopX
           </h1>
-          <p className="text-gray-500 text-[20px] mb-8">
+          <p className="text-gray-500 text-[20px] mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
 
@@ -21,7 +21,7 @@ export default function LandingPage() {
             <Button
               bgColor="bg-purple-600"
               textColor="text-white"
-              className="cursor-pointer hover:bg-purple-700 h-[50px] text-[18px] mb-2 font-Rubik"
+              className="text-white bg-[#6C25FF] cursor-pointer hover:bg-purple-700 h-[50px] text-[18px] mb-2 font-Rubik"
               onClick={() => navigate("/signup")}
             >
               Create Account
@@ -30,7 +30,7 @@ export default function LandingPage() {
             <Button
               bgColor="bg-purple-100"
               textColor="text-purple-700"
-              className="cursor-pointer hover:bg-purple-200 h-[50px] text-[18px] mb-6"
+              className="cursor-pointer text-[#504E64] bg-[#CEBAFB]  hover:bg-purple-200 h-[50px] text-[18px] mb-6"
               onClick={() => navigate("/login")}
             >
               Already Registered? Login

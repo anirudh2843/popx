@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Eye, EyeOff} from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +57,6 @@ const SignUpPage = () => {
             />
           </div>
 
-          {/* Phone Number */}
           <div>
             <label className="text-[18px] font-semibold text-purple-600">
               Phone number<span className="text-red-500">*</span>
@@ -73,7 +72,6 @@ const SignUpPage = () => {
             />
           </div>
 
-          {/* Email Address */}
           <div>
             <label className="text-[18px] font-semibold text-purple-600">
               Email address<span className="text-red-500">*</span>
@@ -89,7 +87,6 @@ const SignUpPage = () => {
             />
           </div>
 
-          {/* Password */}
           <div className="relative">
             <label className="text-[18px] font-semibold text-purple-600">
               Password<span className="text-red-500">*</span>
@@ -117,7 +114,6 @@ const SignUpPage = () => {
             </button>
           </div>
 
-          {/* Company Name */}
           <div>
             <label className="text-[18px] font-semibold text-purple-600">
               Company name
@@ -132,7 +128,6 @@ const SignUpPage = () => {
             />
           </div>
 
-          {/* Are you an Agency */}
           <div>
             <p className="text-[20px] font-semibold text-gray-700 mb-2">
               Are you an Agency?<span className="text-red-500">*</span>
@@ -161,7 +156,6 @@ const SignUpPage = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={!isFormFilled}
